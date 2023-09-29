@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstScreenViewController" customModule="SpeedyDemoProject" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speedyicon" translatesAutoresizingMaskIntoConstraints="NO" id="RCv-lT-9gU">
+                    <rect key="frame" x="121.66666666666669" y="79" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Mpk-6j-jhB"/>
+                        <constraint firstAttribute="width" constant="150" id="Zty-a8-fb2"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speedysecondicon" translatesAutoresizingMaskIntoConstraints="NO" id="HBA-OO-das">
+                    <rect key="frame" x="20" y="249" width="353" height="319"/>
+                </imageView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivs-Eb-KYM">
+                    <rect key="frame" x="30" y="751" width="140" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="ZB4-Zy-2LG"/>
+                        <constraint firstAttribute="height" constant="50" id="t8q-OA-yUk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Log in">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginBtn:" destination="-1" eventType="touchUpInside" id="qFV-qI-AHi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs4-KN-nJS">
+                    <rect key="frame" x="223" y="751" width="140" height="50"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="fmU-oS-FJc"/>
+                        <constraint firstAttribute="height" constant="50" id="rIm-K3-Am0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="registerBtn:" destination="-1" eventType="touchUpInside" id="rlQ-62-MV0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple, Fast and Convenient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaC-8z-Hfc">
+                    <rect key="frame" x="25.666666666666657" y="598" width="342" height="31.333333333333371"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get everything delivered in 10 minutes." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5b-6c-buT">
+                    <rect key="frame" x="41" y="659.33333333333337" width="311.33333333333331" height="21.666666666666629"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="PSr-7u-I7U">
+                    <rect key="frame" x="126.66666666666669" y="711" width="140" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="D9B-ag-1Le"/>
+                        <constraint firstAttribute="height" constant="25" id="YMb-e7-fmu"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RCv-lT-9gU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="62j-9x-BcG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HBA-OO-das" secondAttribute="bottom" constant="250" id="FIn-eS-ti5"/>
+                <constraint firstItem="HBA-OO-das" firstAttribute="top" secondItem="RCv-lT-9gU" secondAttribute="bottom" constant="20" id="KwL-mJ-3ak"/>
+                <constraint firstItem="HBA-OO-das" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="L0I-RQ-2T1"/>
+                <constraint firstItem="PSr-7u-I7U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MLz-3o-VkY"/>
+                <constraint firstItem="PSr-7u-I7U" firstAttribute="top" secondItem="h5b-6c-buT" secondAttribute="bottom" constant="30" id="T6e-31-VoK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gs4-KN-nJS" secondAttribute="trailing" constant="30" id="VId-nh-d5V"/>
+                <constraint firstItem="h5b-6c-buT" firstAttribute="top" secondItem="OaC-8z-Hfc" secondAttribute="bottom" constant="30" id="aG7-Cc-51i"/>
+                <constraint firstItem="ivs-Eb-KYM" firstAttribute="top" secondItem="h5b-6c-buT" secondAttribute="bottom" constant="70" id="e1B-q7-LvD"/>
+                <constraint firstItem="ivs-Eb-KYM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="j9s-4m-Vxa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HBA-OO-das" secondAttribute="trailing" constant="20" id="nZZ-qA-93L"/>
+                <constraint firstItem="RCv-lT-9gU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nvT-9W-8HN"/>
+                <constraint firstItem="h5b-6c-buT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pyK-MJ-DXu"/>
+                <constraint firstItem="OaC-8z-Hfc" firstAttribute="top" secondItem="HBA-OO-das" secondAttribute="bottom" constant="30" id="sil-FS-m6Y"/>
+                <constraint firstItem="gs4-KN-nJS" firstAttribute="top" secondItem="h5b-6c-buT" secondAttribute="bottom" constant="70" id="x98-5U-1Yp"/>
+                <constraint firstItem="OaC-8z-Hfc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zcp-LZ-57q"/>
+            </constraints>
+            <point key="canvasLocation" x="54.198473282442748" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="speedyicon" width="512" height="452"/>
+        <image name="speedysecondicon" width="1186" height="1189"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
